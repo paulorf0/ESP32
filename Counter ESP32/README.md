@@ -26,10 +26,8 @@ O objetivo deste projeto é fornecer uma interface física simples para contar d
 Veja o projeto em funcionamento:
 
 <p align="center">
-  <img src="assets/gif.mp4" alt="Demonstração do Contador" width="600px">
+  <img src="assets/gif.gif" alt="Demonstração do Contador" width="600px">
 </p>
-
-> *Nota: Se o vídeo acima não carregar, ele pode ser encontrado na pasta `assets/`.*
 
 ## 🔧 Estrutura do Código
 
