@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "Counter ESP32",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

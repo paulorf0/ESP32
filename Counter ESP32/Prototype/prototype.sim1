@@ -1,0 +1,71 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="Led" CircId="Led-35" mainComp="false" Show_id="false" Show_Val="false" Pos="-456,16" rotation="270" hflip="1" vflip="1" label="Led-35" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-36" mainComp="false" Show_id="false" Show_Val="false" Pos="-416,16" rotation="270" hflip="1" vflip="1" label="Led-36" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-37" mainComp="false" Show_id="false" Show_Val="false" Pos="-372,20" rotation="270" hflip="1" vflip="1" label="Led-37" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Subcircuit" CircId="Real_Button-38" mainComp="false" Show_id="true" Show_Val="false" Pos="-428,164" rotation="0" hflip="1" vflip="1" label="Increase" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Subcircuit" CircId="Real_Button-39" mainComp="false" Show_id="true" Show_Val="false" Pos="-428,208" rotation="0" hflip="1" vflip="1" label="Decrease" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="TextComponent" CircId="TextComponent-43" mainComp="false" Show_id="false" Show_Val="false" Pos="-212,68" rotation="630" hflip="1" vflip="1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="5 _px" Fixed_Width="false" Text="Increase Port 2" />
+
+<item itemtype="TextComponent" CircId="TextComponent-44" mainComp="false" Show_id="false" Show_Val="false" Pos="-248,188" rotation="720" hflip="1" vflip="1" label="TextComponent-44" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="5 _px" Fixed_Width="false" Text="Decrease Port 3" />
+
+<item itemtype="Ground" CircId="Ground-45" mainComp="false" Show_id="false" Show_Val="false" Pos="-416,-44" rotation="180" hflip="1" vflip="1" label="Ground-45" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-53" mainComp="false" Show_id="false" Show_Val="false" Pos="36,160" rotation="270" hflip="1" vflip="1" label="Fixed Voltage-53" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="3.3 V" Out="true" />
+
+<item itemtype="Resistor" CircId="Resistor-55" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-416,72" rotation="90" hflip="1" vflip="1" label="Resistor-55" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="500 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-59" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-456,72" rotation="90" hflip="1" vflip="1" label="Resistor-59" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="500 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-60" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-372,72" rotation="90" hflip="1" vflip="1" label="Resistor-60" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="500 Ω" />
+
+<item itemtype="Subcircuit" CircId="Uno-34" mainComp="false" Show_id="true" Show_Val="false" Pos="-160,-8" rotation="0" hflip="1" vflip="1" label="Uno-34" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="Documents/PlatformIO/Projects/Counter/.pio/build/uno/firmware.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Node" CircId="Node-48" mainComp="false" Pos="-416,-20" />
+
+<item itemtype="Node" CircId="Node-50" mainComp="false" Pos="-416,-28" />
+
+<item itemtype="Node" CircId="Node-61" mainComp="false" Pos="-268,180" />
+
+<item itemtype="Connector" uid="Connector-131" startpinid="Led-37-rPin" endpinid="Node-48-1" pointList="-372,4,-372,-20,-416,-20" />
+
+<item itemtype="Connector" uid="Connector-132" startpinid="Led-36-rPin" endpinid="Node-48-0" pointList="-416,0,-416,-20" />
+
+<item itemtype="Connector" uid="Connector-141" startpinid="Led-35-rPin" endpinid="Node-50-1" pointList="-456,0,-456,-20,-416,-20,-416,-28" />
+
+<item itemtype="Connector" uid="Connector-142" startpinid="Node-48-2" endpinid="Node-50-0" pointList="-416,-20,-416,-28" />
+
+<item itemtype="Connector" uid="Connector-143" startpinid="Node-50-2" endpinid="Ground-45-Gnd" pointList="-416,-28,-416,-28" />
+
+<item itemtype="Connector" uid="Connector-162" startpinid="Resistor-59-lPin" endpinid="Led-35-lPin" pointList="-456,56,-456,32" />
+
+<item itemtype="Connector" uid="Connector-164" startpinid="Led-36-lPin" endpinid="Resistor-55-lPin" pointList="-416,32,-416,56" />
+
+<item itemtype="Connector" uid="Connector-166" startpinid="Resistor-60-lPin" endpinid="Led-37-lPin" pointList="-372,56,-372,36" />
+
+<item itemtype="Connector" uid="Connector-167" startpinid="Resistor-60-rPin" endpinid="Uno-34-10" pointList="-372,88,-372,96,-152,96" />
+
+<item itemtype="Connector" uid="Connector-165" startpinid="Resistor-55-rPin" endpinid="Uno-34-11" pointList="-416,88,-416,104,-152,104" />
+
+<item itemtype="Connector" uid="Connector-163" startpinid="Resistor-59-rPin" endpinid="Uno-34-12" pointList="-456,88,-456,112,-152,112" />
+
+<item itemtype="Connector" uid="Connector-157" startpinid="Fixed Voltage-53-outnod" endpinid="Uno-34-3V3" pointList="36,144,36,100,-8,100,-8,96" />
+
+<item itemtype="Connector" uid="Connector-170" startpinid="Real_Button-38-Q" endpinid="Uno-34-2" pointList="-388,172,-180,172,-180,24,-152,24" />
+
+<item itemtype="Connector" uid="Connector-171" startpinid="Real_Button-39-Q" endpinid="Uno-34-3" pointList="-388,216,-168,216,-168,32,-152,32" />
+
+<item itemtype="Connector" uid="Connector-174" startpinid="Real_Button-39-!Q" endpinid="Node-61-1" pointList="-388,224,-268,224,-268,180" />
+
+<item itemtype="Connector" uid="Connector-175" startpinid="Real_Button-38-!Q" endpinid="Node-61-0" pointList="-388,180,-268,180" />
+
+<item itemtype="Connector" uid="Connector-176" startpinid="Node-61-2" endpinid="Uno-34-GND2" pointList="-268,180,-268,128,-152,128" />
+
+</circuit>
